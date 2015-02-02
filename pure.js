@@ -30,6 +30,11 @@ fis.config.merge({
                 release : '${statics}/$&'
             },
             {
+                reg : '**.css',
+                useSprite: true,
+                release : '${statics}/$&'
+            },
+            {
                 reg : /^\/page\/(.*)$/i,
                 useCache : false,
                 release : '$1'
